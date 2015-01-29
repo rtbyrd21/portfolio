@@ -1,0 +1,49 @@
+/*  By ilovecolors.com.ar  *
+ *  http://www.ilovecolors.com.ar/jquery-slide-upwards-using-slidedown/ */
+
+body{
+	height: 100%;
+	width: 100%;
+	font: 0.75em Arial, Helvetica, sans-serif;
+}
+a{
+	color:#d00;
+	text-decoration:none;
+}
+a:hover{ text-decoration: underline; }
+.block {
+	/* Layout */
+	position: relative;
+	width: 320px;
+	height: 260px;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	/* Styling */
+	background: url(box.jpg);
+}
+.slidemeup{
+	/* Layout */
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	display: none;
+	width: 260px;
+	height: 40px;
+	padding: 20px;
+	
+	/* Styling */
+	color: #333;
+	font: bold 25px/23px Helvetica,Arial,sans-serif;
+	background: url(overlay.png);
+	-webkit-box-shadow: 0 1px 5px #fff;
+	-moz-box-shadow: 0 1px 5px #fff;
+	box-shadow: 0 1px 5px #fff;
+	border: 1px solid #fff;
+	text-shadow: 0 1px 0 #fff;
+}
+small{
+	font: 14px Helvetica, Arial, sans-serif;
+}
+

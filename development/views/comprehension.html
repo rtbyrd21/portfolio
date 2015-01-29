@@ -1,0 +1,166 @@
+<section class="meetings cf">
+
+  <form class="formgroup addmeeting cf"
+    name="myform"
+    ng-submit="addMeeting()"
+    novalidate>
+    
+  <h2 class="intro">Based on the three symbols provided for each definition, <br>please rate how many people will comprehend them.</h2>
+     <ul>
+       <li>0 = none</li>
+       <li>1 = some</li>
+       <li>2 = half</li>
+       <li>3 = most</li>
+       <li>4 = all</li>
+     </ul>  
+    
+  <div class="iconwrapper">
+   <h1>Damage</h1>
+   <p>Physical harm that is done to something or to someone's body.</p>
+    <div class="individualwrapper">
+     
+      <div class="imagewrapper">
+      
+       <div class="damageimage{{$index + 1}}">
+       </div>
+       <select ng-model="damage[$index+1]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+       <div class="imagewrapper">
+       <div class="damageimage{{$index + 2}}">
+       </div>
+        <select ng-model="damage[$index+2]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+      
+      <div class="imagewrapper nf">
+       <div class="damageimage{{$index + 3}}">
+       </div>
+        <select ng-model="damage[$index+3]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+      </div>
+    </div><!--iconwrapper-->
+    
+    
+    <div class="iconwrapper">
+    <h1>Physical Therapy</h1>
+   <p>The treatment of disease, injury, or disability by physical and mechanical means.</p>
+    <div class="individualwrapper">
+     <p></p>
+      <div class="imagewrapper">
+      
+       <div class="physicaltherapyimage{{$index + 1}}">
+       </div>
+        <select ng-model="physicaltherapy[$index+1]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+       <div class="imagewrapper">
+       <div class="physicaltherapyimage{{$index + 2}}">
+       </div>
+        <select ng-model="physicaltherapy[$index+2]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+      
+      <div class="imagewrapper nf">
+       <div class="physicaltherapyimage{{$index + 3}}">
+       </div>
+        <select ng-model="physicaltherapy[$index+3]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+      </div>
+    </div><!--iconwrapper-->
+    
+    
+    <div class="iconwrapper">
+     <h1>Ocular</h1>
+   <p>Of or relating to the eye.</p>
+    <div class="individualwrapper">
+     <p></p>
+      <div class="imagewrapper">
+      
+       <div class="ocularimage{{$index + 1}}">
+       </div>
+        <select ng-model="ocular[$index+1]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+       <div class="imagewrapper">
+       <div class="ocularimage{{$index + 2}}">
+       </div>
+        <select ng-model="ocular[$index+2]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+      
+      <div class="imagewrapper nf">
+       <div class="ocularimage{{$index + 3}}">
+       </div>
+        <select ng-model="ocular[$index+3]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+      </div>
+    </div><!--iconwrapper-->
+    
+    
+    
+    <div class="iconwrapper">
+    <h1>Skin / Dermatology</h1>
+   <p>A branch of medicine dealing with the skin, its structure, functions, and diseases.</p>
+    <div class="individualwrapper">
+     <p></p>
+      <div class="imagewrapper">
+      
+       <div class="skinimage{{$index + 1}}">
+       </div>
+        <select ng-model="skin[$index+1]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+       <div class="imagewrapper">
+       <div class="skinimage{{$index + 2}}">
+       </div>
+        <select ng-model="skin[$index+2]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+      
+      <div class="imagewrapper nf">
+       <div class="skinimage{{$index + 3}}">
+       </div>
+        <select ng-model="skin[$index+3]">
+       <option ng-repeat="n in [] | range:5" value="{{n}}" ng-required="true">{{n}}</option>
+       </select>
+      </div>
+       
+      </div>
+    </div><!--iconwrapper-->    
+    
+    
+    <button type="submit" class="btn" 
+      ng-disabled="myform.$invalid">Submit</button>
+  </form>
+
+<!--
+  <h2>Your Meetings</h2>
+  <div class="meeting" ng-repeat="(key, meeting) in meetings">
+    <button class="btn btn-delete tooltip" ng-click="deleteMeeting(key)">
+      <span>Delete this meeting</span></button>
+    <span class="text">{{meeting.name}}</span>
+  </div>
+-->
+</section>

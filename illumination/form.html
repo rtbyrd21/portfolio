@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="949.54">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    span.s1 {font: 12.0px Times}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;?php</p>
+<p class="p2"> </p>
+<p class="p1">if(isset($_POST['email'])) {</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    // EDIT THE 2 LINES BELOW AS REQUIRED</p>
+<p class="p2"> </p>
+<p class="p1">    $email_to<span class="s1"> </span>= "you@yourdomain.com";</p>
+<p class="p2"> </p>
+<p class="p1">    $email_subject<span class="s1"> </span>= "Your email subject line";</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    function<span class="s1"> </span>died($error) {</p>
+<p class="p2"> </p>
+<p class="p1">        // your error code can go here</p>
+<p class="p2"> </p>
+<p class="p1">        echo<span class="s1"> </span>"We are very sorry, but there were error(s) found with the form you submitted. ";</p>
+<p class="p2"> </p>
+<p class="p1">        echo<span class="s1"> </span>"These errors appear below.&lt;br /&gt;&lt;br /&gt;";</p>
+<p class="p2"> </p>
+<p class="p1">        echo<span class="s1"> </span>$error."&lt;br /&gt;&lt;br /&gt;";</p>
+<p class="p2"> </p>
+<p class="p1">        echo<span class="s1"> </span>"Please go back and fix these errors.&lt;br /&gt;&lt;br /&gt;";</p>
+<p class="p2"> </p>
+<p class="p1">        die();</p>
+<p class="p2"> </p>
+<p class="p1">    }</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    // validation expected data exists</p>
+<p class="p2"> </p>
+<p class="p1">    if(!isset($_POST['first_name']) ||</p>
+<p class="p2"> </p>
+<p class="p1">        !isset($_POST['last_name']) ||</p>
+<p class="p2"> </p>
+<p class="p1">        !isset($_POST['email']) ||</p>
+<p class="p2"> </p>
+<p class="p1">        !isset($_POST['telephone']) ||</p>
+<p class="p2"> </p>
+<p class="p1">        !isset($_POST['comments'])) {</p>
+<p class="p2"> </p>
+<p class="p1">        died('We are sorry, but there appears to be a problem with the form you submitted.');      </p>
+<p class="p2"> </p>
+<p class="p1">    }</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    $first_name<span class="s1"> </span>= $_POST['first_name']; // required</p>
+<p class="p2"> </p>
+<p class="p1">    $last_name<span class="s1"> </span>= $_POST['last_name']; // required</p>
+<p class="p2"> </p>
+<p class="p1">    $email_from<span class="s1"> </span>= $_POST['email']; // required</p>
+<p class="p2"> </p>
+<p class="p1">    $telephone<span class="s1"> </span>= $_POST['telephone']; // not required</p>
+<p class="p2"> </p>
+<p class="p1">    $comments<span class="s1"> </span>= $_POST['comments']; // required</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    $error_message<span class="s1"> </span>= "";</p>
+<p class="p2"> </p>
+<p class="p1">    $email_exp<span class="s1"> </span>= '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';</p>
+<p class="p2"> </p>
+<p class="p1">  if(!preg_match($email_exp,$email_from)) {</p>
+<p class="p2"> </p>
+<p class="p1">    $error_message<span class="s1"> </span>.= 'The Email Address you entered does not appear to be valid.&lt;br /&gt;';</p>
+<p class="p2"> </p>
+<p class="p1">  }</p>
+<p class="p2"> </p>
+<p class="p1">    $string_exp<span class="s1"> </span>= "/^[A-Za-z .'-]+$/";</p>
+<p class="p2"> </p>
+<p class="p1">  if(!preg_match($string_exp,$first_name)) {</p>
+<p class="p2"> </p>
+<p class="p1">    $error_message<span class="s1"> </span>.= 'The First Name you entered does not appear to be valid.&lt;br /&gt;';</p>
+<p class="p2"> </p>
+<p class="p1">  }</p>
+<p class="p2"> </p>
+<p class="p1">  if(!preg_match($string_exp,$last_name)) {</p>
+<p class="p2"> </p>
+<p class="p1">    $error_message<span class="s1"> </span>.= 'The Last Name you entered does not appear to be valid.&lt;br /&gt;';</p>
+<p class="p2"> </p>
+<p class="p1">  }</p>
+<p class="p2"> </p>
+<p class="p1">  if(strlen($comments) &lt; 2) {</p>
+<p class="p2"> </p>
+<p class="p1">    $error_message<span class="s1"> </span>.= 'The Comments you entered do not appear to be valid.&lt;br /&gt;';</p>
+<p class="p2"> </p>
+<p class="p1">  }</p>
+<p class="p2"> </p>
+<p class="p1">  if(strlen($error_message) &gt; 0) {</p>
+<p class="p2"> </p>
+<p class="p1">    died($error_message);</p>
+<p class="p2"> </p>
+<p class="p1">  }</p>
+<p class="p2"> </p>
+<p class="p1">    $email_message<span class="s1"> </span>= "Form details below.\n\n";</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    function<span class="s1"> </span>clean_string($string) {</p>
+<p class="p2"> </p>
+<p class="p1">      $bad<span class="s1"> </span>= array("content-type","bcc:","to:","cc:","href");</p>
+<p class="p2"> </p>
+<p class="p1">      return<span class="s1"> </span>str_replace($bad,"",$string);</p>
+<p class="p2"> </p>
+<p class="p1">    }</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    $email_message<span class="s1"> </span>.= "First Name: ".clean_string($first_name)."\n";</p>
+<p class="p2"> </p>
+<p class="p1">    $email_message<span class="s1"> </span>.= "Last Name: ".clean_string($last_name)."\n";</p>
+<p class="p2"> </p>
+<p class="p1">    $email_message<span class="s1"> </span>.= "Email: ".clean_string($email_from)."\n";</p>
+<p class="p2"> </p>
+<p class="p1">    $email_message<span class="s1"> </span>.= "Telephone: ".clean_string($telephone)."\n";</p>
+<p class="p2"> </p>
+<p class="p1">    $email_message<span class="s1"> </span>.= "Comments: ".clean_string($comments)."\n";</p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">    <span class="s1"> </span></p>
+<p class="p2"> </p>
+<p class="p1">// create email headers</p>
+<p class="p2"> </p>
+<p class="p1">$headers<span class="s1"> </span>= 'From: '.$email_from."\r\n".</p>
+<p class="p2"> </p>
+<p class="p1">'Reply-To: '.$email_from."\r\n"<span class="s1"> </span>.</p>
+<p class="p2"> </p>
+<p class="p1">'X-Mailer: PHP/'<span class="s1"> </span>. phpversion();</p>
+<p class="p2"> </p>
+<p class="p1">@mail($email_to, $email_subject, $email_message, $headers); </p>
+<p class="p2"> </p>
+<p class="p1">?&gt;</p>
+<p class="p2"> </p>
+<p class="p2"> </p>
+<p class="p2"> </p>
+<p class="p1">&lt;!-- include<span class="s1"> </span>your own success html here --&gt;</p>
+<p class="p2"> </p>
+<p class="p2"> </p>
+<p class="p2"> </p>
+<p class="p1">Thank you for<span class="s1"> </span>contacting us. We will be in touch with you very soon.</p>
+<p class="p2"> </p>
+<p class="p2"> </p>
+<p class="p2"> </p>
+<p class="p1">&lt;?php</p>
+<p class="p2"> </p>
+<p class="p1">}</p>
+<p class="p2"> </p>
+<p class="p1">?&gt;</p>
+</body>
+</html>

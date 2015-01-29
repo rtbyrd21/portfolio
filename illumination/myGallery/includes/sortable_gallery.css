@@ -1,0 +1,164 @@
+
+#work {
+	margin:0px;
+	padding: 20px 10px 20px 30px;
+	font: 14px Arial;
+	color: #bd8a1e;
+	background-color:;
+}
+
+#work p {
+	margin: 0px 0px 1em 0px;
+}
+
+img.background {
+	position: fixed; right: 0px; bottom: 0px;
+}
+
+.gallery {
+	width: 100%;
+	margin: 0px auto;
+	position: relative;
+	background-color: white;
+	height:400px;
+	padding: 15px 0 0 15px;
+}
+
+.gallery .sorting {
+	margin: 0px 0px 15px 0px;
+	border: 1px solid #6d4d2e;
+	background-color: rgba(52, 152, 219, 0.9);
+	min-width: 165px;
+}
+
+.gallery .sorting span { 
+	padding: 0px 20px 0px 0px;
+	color: #6d4d2e;
+	font-style: italic;
+}
+
+.gallery .sorting div {
+	margin: 10px 0px;
+}
+
+
+.gallery .sorting a:hover { 
+	color: #e5aa2c; 
+}
+
+.gallery .sorting a:selected { 
+	color: #e5aa2c; 
+	background-image: url();
+}
+
+.gallery .photos .thumbnail_container { position: relative; background-color: black; }
+.gallery .photos .thumbnail_container a.thumbnailGallery { position: absolute; }
+.gallery .photos .thumbnail_container a.thumbnailGallery img { 
+	width: 75px;
+	height: 75px;
+	border: 1px solid #6d4d2e; 
+	}
+	
+.clear_bothx {
+	clear:both;
+	line-height: 1px;
+}
+
+.photos { background-color: white; }
+
+.sorting {
+	float:left;
+	width: 10%;
+	padding:15px 0 0 0;
+	line-height:2em;
+}
+
+.gallery .sorting a:hover {
+    background-color: transparent;
+    color: rgb(51, 51, 51);
+    border-bottom: 2px solid white;
+}
+
+.gallery .sorting a:active{
+    background-color: transparent;
+    color: rgb(51, 51, 51);
+    border-bottom: 2px solid white;
+}
+
+.thumbnail_container{
+	margin:0 0 0 190px;
+	
+	
+}
+
+.photos{
+	padding:0 0 0 165px;
+	display: block;
+}
+
+.thumbnail_container {
+	margin: 0 0 0 10px;
+}
+
+.sorting a:active {
+	color: black;
+}
+
+.floatRight {
+	float:right;
+}
+
+img .img-circle {
+	padding: 0 5px 0 0;
+}
+
+#myModal1 {
+	position:relative;
+	margin: 0 auto;
+}
+
+.gallery .sorting a{
+	color: #fff;
+	font-size: .75em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 3px 0px;
+	margin: 0px 10px;
+	background: url(images/misc/button_01.png) no-repeat 0px 3px;
+}
+
+.small {
+	padding:0;
+	margin:0;
+}
+
+
+/* Vertical */
+@media screen and (min-height:50px) and (max-height:520px) { }
+@media screen and (min-height:521px) and (max-height:700px) {   }
+@media screen and (min-height:701px) {   }
+
+/* Horiz */
+@media screen and (min-width:50px) and (max-width:500px) { 
+		.sorting {
+	background-color:black;
+}
+
+.photos{
+	padding:0px;
+	margin:0px;
+}  
+
+.gallery .sorting {
+	margin: 0px 0px 15px 0px;
+	border: 1px solid #6d4d2e;
+	background-color: rgba(52, 152, 219, 0.9);
+	min-width: ;
+	display: inline;
+	background-color: white;
+	border: 1px solid white;
+}
+
+	 }
+@media screen and (min-width:501px) and (max-width:960px) {   }
+@media screen and (min-width:961px) {   }

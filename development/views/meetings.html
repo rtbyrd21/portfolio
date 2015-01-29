@@ -1,0 +1,120 @@
+<section class="meetings cf">
+<!--
+  <h1>Add Meetings {{authid}}</h1>
+  <br>
+  <p>{{currentUser}}</p>
+  <p>{{howManyMeetings}}</p>
+-->
+  <form class="formgroup addmeeting cf"
+    name="myform"
+    ng-submit="addMeeting()"
+    novalidate>
+    
+    <div class="iconwrapper">
+<!--
+    {{interpretation}} {{actions}}
+    {{interpretation[1]}}
+-->
+    <div class="individualwrapper" ng-repeat="n in [] | range:15">
+      
+       <div class="iconimage">
+       </div>
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        <p>Exactly what do you think this symbol means?</p>
+         <textarea type="text" name="interpretation_1"
+        ng-attr-name="interpretation{{$index + 1}}" ng-model="interpretation[$index+1]" ng-required="true"></textarea>
+         <p>What action you would take in response to this symbol?</p>
+          <textarea type="text" name="action{{$index + 1}}" ng-model="actions[$index+1]" ng-required="true"></textarea>  
+      </div>
+      </div>
+    
+     
+<!--
+      <div class="individualwrapper">
+       <div class="iconimage">
+       </div>
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        <p>Exactly what do
+
+you think this symbol means?</p>
+         <textarea type="text" name="interpretation_1"
+        ng-model="interpretation_1" ng-required="true"></textarea>
+         <p>What action you would take in response to this symbol?</p>
+          <textarea type="text" name="action_1"
+        ng-model="action_1" ng-required="true"></textarea>  
+      </div>
+      </div>
+      
+      
+      <div class="individualwrapper">
+      <div class="iconimage">
+       </div>
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        
+        <p>Exactly what do you think this symbol means?</p>
+         <textarea type="text" name="interpretation_2"
+        ng-model="interpretation_2" ng-required="true"></textarea>
+         <p>What action you would take in response to this symbol?</p>
+          <textarea type="text" name="action_2"
+        ng-model="action_2" ng-required="true"></textarea>  
+      </div>
+      </div>
+      
+      <div class="individualwrapper">
+      <div class="iconimage">
+       </div>
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        <p>Exactly what do you think this symbol means?</p>
+         <textarea type="text" name="interpretation_3"
+        ng-model="interpretation_3" ng-required="true"></textarea>
+         <p>What action you would take in response to this symbol?</p>
+          <textarea type="text" name="action_3"
+        ng-model="action_3" ng-required="true"></textarea>  
+      </div>
+      </div>
+      
+      <div class="individualwrapper">
+      <div class="iconimage">
+       </div>
+       <div class="icontext">
+        <p>Imagine that you are in a health care facility.</p> 
+        
+        <p>Exactly what do you think this symbol means?</p>
+         <textarea type="text" name="interpretation_4"
+        ng-model="interpretation_4" ng-required="true"></textarea>
+         <p>What action you would take in response to this symbol?</p>
+          <textarea type="text" name="action_4"
+        ng-model="action_4" ng-required="true"></textarea>  
+      </div>
+      </div>
+      
+-->
+      
+    </div>
+    
+    
+    
+    <button type="submit" class="btn" 
+      ng-disabled="myform.$invalid">Submit</button>
+  </form>
+
+<!--
+  <h2>Your Meetings</h2>
+  <div class="meeting" ng-repeat="(key, meeting) in meetings">
+    <button class="btn btn-delete tooltip" ng-click="deleteMeeting(key)">
+      <span>Delete this meeting</span></button>
+    <span class="text">{{meeting.name}}</span>
+  </div>
+-->
+</section>
+
+
+<script>
+$(document).ready(function(){  
+
+});
+</script>

@@ -1,0 +1,291 @@
+
+h3 {
+	font-weight:bold;
+	border-bottom: 3px solid #333;
+	color: #333;
+}
+
+#branding {
+	
+	margin:25px 0 10px 0;
+}
+
+.navbar {
+	margin: 0;
+	
+}
+
+#container-fluid, body, .container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 940px; /* or 950px */
+}
+
+.carousel-control {
+	position:absolute;
+}
+
+.navbar {
+	background-color: #DB3C14;
+	border-radius: 0px;
+	
+}
+
+
+
+
+h2 span { 
+   color: white; 
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(52, 152, 219, 0.9);
+   padding: 10px; 
+ position: relative;
+   bottom: 200px;
+   left: -190px;
+   line-height: 1.6em;
+}
+
+h2 span.spacer {
+   padding:0 5px;
+}
+
+.carousel-caption {
+	text-align:left;
+}
+
+p, h1, h2, h3 {
+	
+	font-family:"cordo",serif;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+   }
+   
+
+.firstcharacterx { 
+	float: left; 
+	color: #DB3C14; 
+	font-size: 80px; 
+	line-height: 70px; 
+	padding-top: 4px;
+	font-weight:bold;
+padding-right: 8px; 
+font-family: "helvetica"; }
+
+body {
+	
+	background-color: #D7DADB;
+	font-family: "cardo";
+}
+
+.navbar-collapse {
+	padding-left:0px;
+	position:fixed;
+}
+
+.main, .sidebar, .content{
+	background-color: white;
+	margin: 
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+
+.nav > li > a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.content{
+	width: 100%;
+}
+
+a {
+    background: none;
+}
+
+.collapse {
+	position:relative;
+	
+}
+
+.navbar {
+	min-height: 40px;
+}
+
+h3 {
+	font-family:"open sans", "sans-sefif";
+	font-weight: light;
+	padding: 0 0 10px 0;
+	
+}
+
+.nav {
+	margin: 45px 0 0 0;
+}
+
+.nav li a {
+    border-bottom: 2px solid transparent;
+    color: #252525;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(51, 51, 51);
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.navbar-collapse {
+	padding-left: 0px;
+    position: relative;
+    
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 4px 4px;
+    float: right;
+    margin-bottom: 8px;
+    margin-right: 25px;
+    margin-top: 40px;
+    padding: 9px 10px;
+    position: relative;
+}
+
+a {
+	font-family: "open sans"
+}
+
+.sidebar {
+	background-color: white;
+	padding: 0 10px 10px 10px;
+}
+
+footer {
+	text-align:center;
+	background-color:#DB3C14;
+	color: white;
+	padding: 5px 0;
+	margin: 0 0 10px 0;
+	clear: both;
+}
+
+footer p{
+	padding: 5px 0 0 0;
+	font-family: "open sans";
+	font-size:.8em;
+	
+}
+
+#collapseOne img {
+	width: 25%;
+}
+
+h5 {
+	margin: 0 0 8px 0;
+	font-family: "open sans","sans-sefif";
+}
+
+section {
+	margin: 0 0 8px 0;
+}
+
+#collapseTwo img {
+	width: 35%;
+	float: right;
+}
+
+.float {
+	width: 70%;
+}
+
+.panel-default > .panel-heading {
+    background-color: rgb(52, 152, 219);
+    border-color: #DDDDDD;
+    color: white;
+}
+
+.panel-body{
+     background-color:;
+}
+
+
+
+
+
+#promoContainer {
+	background-color: #DDDDDD;
+	margin: 10px auto;
+	
+}
+
+.navbar-collapse {
+    max-width:900px;
+   background-color: rgba(255,255,255,.0)
+   position:fixed;
+}
+
+element {
+    width:30px;
+}
+
+img.img-circle {
+	margin: 0 10px 10px 0;
+}
+
+.navbar-collapse.navbar-ex1-collapse.in {
+	background-color: rgba(219,60,20,.7);
+	float: right;
+	overflow: hidden;
+
+}
+
+
+
+
+.btn {
+	margin: 0 0 15px 0;
+}
+
+img.img-circle {
+	border: 2px solid rgb(51, 51, 51);
+	float:right;
+	margin:0px;
+	padding:0px;
+	cursor:pointer;
+}
+
+div .background img.img-circle {
+	border: 2px solid rgb(51, 51, 51);
+	float:none;
+	margin:0px;
+	margin:0 5px 5px 5px;
+	cursor: none;
+}
+
